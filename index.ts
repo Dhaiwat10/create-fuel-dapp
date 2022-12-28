@@ -26,13 +26,13 @@ const main = async () => {
     })
     .parse(process.argv);
   await mkdir(projectPath);
-  process.chdir(projectPath);
   const tempFile = await downloadTar(
     `https://codeload.github.com/Dhaiwat10/fuel-dapp-template/tar.gz/main`
   );
   await tar.x({
     file: tempFile,
     strip: 1,
+    cwd: join(process.cwd(), projectPath),
   });
   await unlink(tempFile);
 };
