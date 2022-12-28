@@ -5,7 +5,7 @@ A CLI tool to bootstrap a Fuel dapp.
 ## Usage
 
 ```bash
-$ npx create-fuel-dapp <project_name>
+$ pnpm create fuel-dapp <project_name>
 ```
 
 ### Run the `fuel-core` node
