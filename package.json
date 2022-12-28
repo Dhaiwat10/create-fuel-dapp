@@ -16,9 +16,11 @@
     "dev": "ncc build ./index.ts -w -o dist/",
     "prerelease": "rimraf ./dist/",
     "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "prepublish": "pnpm release"
+    "prepublish": "pnpm release",
+    "build": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register"
   },
   "devDependencies": {
+    "@types/command-exists": "^1.2.0",
     "@types/cross-spawn": "^6.0.2",
     "@types/got": "^9.6.12",
     "@types/node": "^18.11.17",
@@ -28,6 +30,7 @@
     "@types/validate-npm-package-name": "^4.0.0",
     "@vercel/ncc": "^0.36.0",
     "chalk": "^5.2.0",
+    "command-exists": "^1.2.9",
     "commander": "^9.4.1",
     "cpy": "^9.0.1",
     "cross-spawn": "^7.0.3",
@@ -35,9 +38,9 @@
     "path": "^0.12.7",
     "prompts": "^2.4.2",
     "rimraf": "^3.0.2",
+    "tar": "^6.1.13",
     "typescript": "^4.9.4",
     "update-check": "^1.5.4",
-    "validate-npm-package-name": "^5.0.0",
-    "tar": "^6.1.13"
+    "validate-npm-package-name": "^5.0.0"
   }
 }

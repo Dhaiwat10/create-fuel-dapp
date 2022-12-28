@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/command-exists': ^1.2.0
   '@types/cross-spawn': ^6.0.2
   '@types/got': ^9.6.12
   '@types/node': ^18.11.17
@@ -10,6 +11,7 @@ specifiers:
   '@types/validate-npm-package-name': ^4.0.0
   '@vercel/ncc': ^0.36.0
   chalk: ^5.2.0
+  command-exists: ^1.2.9
   commander: ^9.4.1
   cpy: ^9.0.1
   cross-spawn: ^7.0.3
@@ -23,6 +25,7 @@ specifiers:
   validate-npm-package-name: ^5.0.0
 
 devDependencies:
+  '@types/command-exists': 1.2.0
   '@types/cross-spawn': 6.0.2
   '@types/got': 9.6.12
   '@types/node': 18.11.17
@@ -32,6 +35,7 @@ devDependencies:
   '@types/validate-npm-package-name': 4.0.0
   '@vercel/ncc': 0.36.0
   chalk: 5.2.0
+  command-exists: 1.2.9
   commander: 9.4.1
   cpy: 9.0.1
   cross-spawn: 7.0.3
@@ -77,6 +81,10 @@ packages:
     engines: {node: '>=14.16'}
     dependencies:
       defer-to-connect: 2.0.1
+    dev: true
+
+  /@types/command-exists/1.2.0:
+    resolution: {integrity: sha512-ugsxEJfsCuqMLSuCD4PIJkp5Uk2z6TCMRCgYVuhRo5cYQY3+1xXTQkSlPtkpGHuvWMjS2KTeVQXxkXRACMbM6A==}
     dev: true
 
   /@types/cross-spawn/6.0.2:
@@ -222,6 +230,10 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
+    dev: true
+
+  /command-exists/1.2.9:
+    resolution: {integrity: sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==}
     dev: true
 
   /commander/9.4.1:
